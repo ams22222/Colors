@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ColorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[ColorController::class,'index']);
+Route::get('/',[ColorController::class, 'index']);
 
-Route::resource([ColorController::class,'index']);
+// Route::resource('color',[ColorController::class]);
+
+// Route::resource('color/{color}',[ColorController::class]);
+
+// Route::resource('color/create',[ColorController::class]);
+
+// Route::resource('color/get',[ColorController::class]);
